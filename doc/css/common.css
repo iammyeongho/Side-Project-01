@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* reset.css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+	text-decoration-line: none;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    position: relative;
+    left: 0;
+    transition: left 500ms cubic-bezier(0.25,0.46,0.45,0.94);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.6vw;
+    line-height: 0.7vw;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input {
+	border: none;
+	background-color: transparent;
+}
+strong {
+    font-weight: 700;
+}
+/* ============================================================================================= */
+
+/* 메인 */
+
+hr.layout {
+    display: none;
+}
+
+#body {
+    position: relative;
+    left: 0;
+    transition: left 500ms cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+#topBanner {
+    position: relative;
+    overflow: hidden;
+    height: 30px;
+    text-align: center;
+    background: #000;
+}
+
+#topBanner .desc {
+    overflow: hidden;
+    font-size: 12px;
+    color: #fff;
+    box-sizing: border-box;
+    line-height: 30px;
+    white-space: nowrap;
+}
+
+#list_txt {
+    height: 30px;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    top: 0;
+}
+
+#list_txt  a{
+    color: #fff;
+    font-weight: 700;
+}
+
+header {
+    height: 100px;
+    padding: 0 4vw;
+}
+
+header .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative !important;
+    height: 100%;
+}
+
+.navigation ul.nav_left {
+    display: flex;
+    gap: 1vw;
+}
+
+.sideNav {
+    gap: 1vw;
+    align-items: center;
+}
+
+.navigation h1 {
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation h1 a img {
+    height: 2vw;
+    max-height: 40px;
+    transition: none !important;
+}
+
+.sideNav {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.sideNav a {
+    font-weight: 600;
+    font-family: Arial;
+    font-size: 10px !important;
+    color: #1e1e1e;
+    text-transform: uppercase;
+}
+
+.menuBtn {
+    background-color: #000;
+    color: #fff !important;
+    padding: 0.15vw 0.5vw;
+    border: 1px solid #000;
+}
+
+.main_wrap {
+    position: relative;
+    display: flex;
+}
+
+.main_visual {
+    width: 100%;
+    height: 32vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    background: #000;
+}
+
+.main_visual img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.2s;
+    opacity: 0.9;
+}
+
+.main_visual_button {
+    background-color: #fff;
+    position: relative;
+}
+
+.main_visual_c_wrap {
+    position: relative;
+    padding: 0;
+    max-width: 2560px;
+    margin: 0 auto;
+}
+
+.main_visual_c_wrap h2 {
+    padding: 4vw 0;
+    margin: 0 4vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.collection {
+    display: flex;
+    gap: 2vw;
+    padding: 0 8vw;
+}
+
+.ci-group-l {
+    width: 50%;
+    height: 50vw;
+    max-height: 1280px;
+    display: flex;
+    gap: 0;
+    cursor: pointer;
+    transition: all 1s;
+    background-color: #000;
+}
+
+.ci-group-r {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.xans-product-1 {
+    margin: 22px 0 0;
+}
+
+.xans-product-1 h2 {
+    padding: 4vw 0;
+    margin: 0 4vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.prd_list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: repeat(1,1fr);
+    column-gap: 2vw;
+    row-gap: 2vw;
+    padding: 0 8vw 4vw;
+    /* background-color: #1e1e1e; */
+}
+
+.box {
+    position: relative;
+    height: 25vw;
+    z-index: 2;
+    font-size: 11px;
+    transition: all 1s;
+    background-color: #000;
+}
+
+.c-product-detai {
+    position: absolute;
+    left: 1vw;
+    bottom: 1vw;
+    z-index: 3;
+    width: 80%;
+}
+
+/* ============================================================================================= */
+
+/* 로그인 */
+
+/* .login_help_box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 4vw 8vw;
+    gap: 4vw;
+    line-height: 0.8vw;
+    text-transform: uppercase;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.login_sm_l {
+    position: sticky;
+    top: 15px;
+    width: 20%;
+} */
+
+.login_help_box {
+    display: flex;
+    justify-content: space-between;
+    padding: 4vw 8vw;
+    gap: 4vw;
+    line-height: 0.8vw;
+    text-transform: uppercase;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.login_sm_l {
+    position: sticky;
+    top: 15px;
+    width: 20%;
+}
+
+.login_sm_l > ul {
+    margin: 1vw 0 2vw;
+}
+
+.login_sm_l > ul li:first-child {
+    margin: 0 0 0.5vw 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.login_sm_l > ul li:first-child span {
+    background: #000;
+    color: #fff;
+    padding: 1px 4px;
+}
+
+.login_sm_l li {
+    margin-top: 1.2vh;
+}
+
+.login_sm_l > ul li a {
+    color: #000000;
+    font-size: 10px;
+}
+
+/* .login_center {
+    width: 70%;
+    padding: 1vw 4vw;
+    max-width: 1024px;
+} */
+
+
+.login_center {
+    width: 70%;
+    padding: 1vw 4vw;
+    max-width: 1024px;
+}
+
+.login_title_area h2 {
+    padding: 0 0 1vw 0;
+    text-align: left;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+.login_title_area div span {
+    line-height: 2em;
+    display: block;
+    font-size: 13px;
+}
+
+.login_title_area div a {
+    color: #000;
+    line-height: 2vw;
+    border-bottom: 1px solid #000;
+    margin-right: 2vw;
+    font-weight: 600;
+    padding-top: 4vw;
+    font-size: 15px;
+}
+
+fieldset {
+    border: none;
+    vertical-align: top;
+}
+
+legend {
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+}
+
+.labels {
+    margin-top: 10px;
+    display: flex;
+    gap: 1vw;
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+}
+
+.labels label {
+    font-weight: 700;
+    display: block;
+}
+
+/* .inputTypeText { 
+    padding: 8px;
+    margin: 5px 0 1vw 0;
+    display: inline-block;
+    border: 1px solid #000;
+    width: 400px;
+}
+
+.login__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    gap: 10px;
+}
+
+.login__button button {
+    margin: 1vw 0;
+    font-size: 11px;
+    font-weight: 600;
+    width: inherit;
+    height: inherit;
+    padding: 0.5vw 1vw;
+    text-decoration: none;
+    vertical-align: middle;
+    word-spacing: -0.5px;
+    letter-spacing: 0;
+    text-align: center;
+    white-space: nowrap;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid transparent;
+}
+
+.login__sns {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0 0;
+} */
+
+.labels {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column; /* 세로로 쌓도록 변경 */
+}
+
+.labels div {
+    margin-bottom: 1vw; /* 각 라벨과 입력 상자 사이에 간격 추가 */
+}
+
+.labels label {
+    font-weight: 700;
+}
+
+.inputTypeText {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #000;
+    width: 100%; /* 부모 너비에 맞게 설정 */
+}
+
+.login__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+    gap: 10px;
+}
+
+.login__button button {
+    width: 100%; /* 부모 너비에 맞게 설정 */
+    margin: 1vw 0;
+    font-size: 11px;
+    font-weight: 600;
+    width: inherit;
+    height: inherit;
+    padding: 0.5vw 1vw;
+    text-decoration: none;
+    vertical-align: middle;
+    word-spacing: -0.5px;
+    letter-spacing: 0;
+    text-align: center;
+    white-space: nowrap;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid transparent;
+}
+
+
+.login__sns {
+    flex-direction: column; /* 세로로 쌓도록 변경 */
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login__sns a {
+    font-weight: 700;
+    font-size: 15px;
+    color: #000;
+    text-decoration: underline;
+}
+
+.login_sm_r {
+    width: 20%;
+    cursor: default;
+}
+
+.login_sm_r > ul li:first-child {
+    margin: 0 0 0.5vw 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.login_sm_r > ul li:first-child span {
+    background: #000;
+    color: #fff;
+    padding: 1px 4px;
+}
+
+.login_sm_r li {
+    margin-top: 1.2vh;
+}
+
+.login_sm_r > ul li a {
+    color: #000000;
+    font-size: 10px;
+}
+
+.login_sm_r ul {
+    margin: 1vw 0 2vw;
+}
+
+
+@media (max-width: 768px) {
+    .login_help_box {
+        flex-direction: column;
+        padding: 4vw;
+    }
+
+    .login_sm_l {
+        width: 100%;
+        position: relative;
+        top: auto;
+        display: none;
+    }
+
+    .login_center {
+        width: 100%;
+        padding: 1vw;
+    }
+
+    .login_sm_r {
+        width: 100%;
+        position: relative;
+        top: auto;
+    }
+}
+
+/* ============================================================================================= */
+
+.regist_title_area h2 {
+    padding: 0 0 1vw 0;
+    text-align: left;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+.regist_title_area div span {
+    line-height: 2em;
+    font-size: 13px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.regist_title_area div a {
+    color: #000;
+    line-height: 2vw;
+    border-bottom: 1px solid #000;
+    margin-right: 2vw;
+    font-weight: 600;
+    padding-top: 4vw;
+    font-size: 15px;
+}
+
+@media (max-width: 1300px) { 
+    .regist_title_span_bar {
+        display: none;
+    }
+    .regist_title_span {
+        display: block;
+    }
+}
+
+@media (min-width: 1025px){
+    .member_area {
+        max-width: 898px;
+        margin: 0 auto;
+    }
+}
+
+.ec_base_table {
+    margin-top: 20px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.ec_base_table table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.ec_base_table table tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+/* 테이블 스타일 수정 */
+.ec_base_table table th {
+    vertical-align: middle;
+    border-right: 1px solid #0000002a;
+    font-size: 0.8rem;
+}
+
+/* 작은 화면에서 스타일 수정 */
+@media (max-width: 1400px) {
+    .ec_base_table table th {
+        border-right: none; /* 우측 테두리 제거 */
+    }
+}
+
+.ec_base_table table td { 
+    padding: 10px 20px;
+}
+
+.ec_base_table tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.ec_base_table .inputTypeText {
+    margin-left: 20px;
+    width: 350px;
+    border: 1px solid #0000002a;
+    font-weight: 700;
+}
+
+.regist_bottom {
+    margin: 30px 0 0 0;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.regist_bottom button {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    font-size: 11px;
+    line-height: 11px;
+    padding: 10px 25px 10px 25px;
+    font-weight: 700;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.regist_bottom button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
